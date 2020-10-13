@@ -1,38 +1,55 @@
-.App {
+html, body {
+  margin: 0;
+}
+
+header {
+  padding: 6em 0;
+  background: url("https://images.unsplash.com/photo-1541919635-250e08fbdd21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background: #445;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav li a {
+  padding: 1em;
+  color: #eee;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  padding: 1em;
+  border: 1px solid #ddd;
+  width: 48%;
+  margin-bottom: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background: #444;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
 }
